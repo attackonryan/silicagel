@@ -1,9 +1,10 @@
 # Ryan
-Simple mvvm framework Ryan,use Proxy,can gracely degrade to use defineProperty.
+MVVM framework Ryan2.0 
+simple but high performance,suitable for small projects.
 
-精简mvvm框架Ryan,利用新特性Proxy,可以优雅降级至defineProperty
-## Support
-IE9+(IE9~11 only support defineProperty)
+## Not Supported
+IE(all version)
+
 ### Test
 
 #### HTML
