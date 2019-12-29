@@ -14,7 +14,7 @@ class Pubsub{
   }
   publish( name : string, ...params : any){
     if(!this.events[name]){
-      this.events[name] = []
+      return
     }
     return this.events[name].map(event=>event(...params))
   }
