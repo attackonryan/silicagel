@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<body>
+    <div id="app">
+    	<div>{{a.b}}</div>
+    	<input type="text" r-model="a.b">
+    	<div>{{a.c.d}}</div>
+    	<input type="text" r-model="a.c.d">
+    	<div>{{e}}</div>
+    	<input type="text" r-model="e">
+    </div>
+	<script src="./../dist/Ryan.js"></script>
+	<script>
+	var ryan = new Ryan({
+		el : '#app',
+		data : {
+			a : {
+				b : 123,
+				c : {
+						d : 321,
+				},
+			},
+			e : 'abc',
+		}
+	})
+	</script>
+</body>
+</html>
