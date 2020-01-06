@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   mode: 'production',
   entry: {        
-      index: './js/src/Ryan.js',
+      index: './js/src/index.js',
   },
   output: {       
       publicPath: '',     
