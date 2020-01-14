@@ -85,7 +85,6 @@ class Ryan{
           let name:string = attr.name
           let exp:string = attr.value
           let value:string|number
-          let tempobj:looseobject
           value = exp.split(".").reduce((pre:any,cur)=>{
             return pre[cur]
           },this._data)
@@ -94,12 +93,11 @@ class Ryan{
           }
           exp.split(".").reduce((pre:any,cur,index,arr)=>{
             if(cur === arr[arr.length - 1]){
-              tempobj = pre
               pre.pubsub.subscribe("updateData",function(newval:any){
                 node.value = newval
               })
               node.addEventListener("input",(e:any)=>{
-                tempobj[cur] = e.target.value
+                pre[cur] = e.target.value
               })
             }
             return pre[cur]
