@@ -16,7 +16,7 @@ class Pubsub{
     if(!this.events[name]){
       return
     }
-    return this.events[name].map(event=>event(...params))
+    return this.events[name].forEach(event=>event(...params))
   }
 }
 
