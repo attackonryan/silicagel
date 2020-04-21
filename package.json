@@ -1,0 +1,26 @@
+{
+  "name": "ryan.js",
+  "version": "0.1.0",
+  "description": "Super performance with tiny file size MVVM framework ryan.js",
+  "main": "dist/ryan.cjs.js",
+  "module": "dist/ryan.esm.js",
+  "scripts": {
+    "dev": "cross-env FORMAT=umd rollup -c -w",
+    "dev:esm": "cross-env FORMAT=esm rollup -c -w",
+    "dev:cjs": "cross-env FORMAT=cjs rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/attackonryan/ryan.js.git"
+  },
+  "keywords": [
+    "ryan",
+    "ryan.js",
+    "MVVM"
+  ],
+  "author": "Siyuan Liu",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
