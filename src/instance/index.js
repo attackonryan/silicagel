@@ -3,11 +3,11 @@ import {
   compile 
 }from "../compiler/index"
 
-function Padding(){
+function Silicagel(){
 
 }
-Padding.render = compile
-Padding.observe = proxy.observe
-Padding.Watcher = proxy.Watcher
+Silicagel.render = compile
+Silicagel.observe = proxy.observe
+Silicagel.Watcher = proxy.Watcher
 
-export default Padding
+export default Silicagel

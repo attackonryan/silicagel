@@ -1,9 +1,9 @@
 {
-  "name": "padding",
+  "name": "silicagel",
   "version": "1.0.0",
   "description": "Lightweight and high performance responsive Library",
-  "main": "dist/padding.cjs.js",
-  "module": "dist/padding.esm.js",
+  "main": "dist/silicagel.cjs.js",
+  "module": "dist/silicagel.esm.js",
   "scripts": {
     "dev": "cross-env FORMAT=umd rollup -c -w",
     "dev:esm": "cross-env FORMAT=esm rollup -c -w",
@@ -14,18 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/attackonryan/padding.git"
+    "url": "https://github.com/attackonryan/silicagel.git"
   },
   "keywords": [
-    "padding",
-    "paddingjs",
+    "silicagel",
+    "silicageljs",
     "responsive",
     "lightweight",
     "Proxy",
     "Interpolation syntax",
     "data monitoring"
   ],
-  "author": "Siyuan Liu",
+  "author": "Ryan",
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^7.0.2",

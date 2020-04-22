@@ -1,5 +1,3 @@
-'use strict';
-
 let uid = 0;
 
 class Dep {
@@ -187,11 +185,11 @@ function compile(el, proxy) {
   return proxy
 }
 
-function Padding(){
+function Silicagel(){
 
 }
-Padding.render = compile;
-Padding.observe = observe;
-Padding.Watcher = Watcher;
+Silicagel.render = compile;
+Silicagel.observe = observe;
+Silicagel.Watcher = Watcher;
 
-module.exports = Padding;
+module.exports = Silicagel;

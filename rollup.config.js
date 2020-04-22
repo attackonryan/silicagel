@@ -7,9 +7,9 @@ function prodConfig(){
   return {
     input: "src/index.js",
     output: {
-      file: `dist/padding.${process.env.FORMAT}.min.js`,
+      file: `dist/silicagel.${process.env.FORMAT}.min.js`,
       format: process.env.FORMAT,
-      name: "Padding"
+      name: "Silicagel"
     },
     plugins: [
       resolve(),
@@ -22,9 +22,9 @@ function devConfig(){
   return {
     input: "src/index.js",
     output: {
-      file: `dist/padding.${process.env.FORMAT}.js`,
+      file: `dist/silicagel.${process.env.FORMAT}.js`,
       format: process.env.FORMAT,
-      name: "Padding"
+      name: "Silicagel"
     },
   }
 }

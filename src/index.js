@@ -1,4 +1,4 @@
-import Padding from "./instance/index"
+import Silicagel from "./instance/index"
 
-module.exports = Padding
+module.exports = Silicagel
 

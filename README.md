@@ -1,4 +1,4 @@
-# Padding
+# Silicagel
 ### Introduction: 
 &nbsp;&nbsp;&nbsp;&nbsp;轻便，高性能的响应式库(压缩版仅3kb)，可解析插值模板和数据侦听  
 &nbsp;&nbsp;&nbsp;&nbsp;Lightweight, high-performance responsive Library (compressed version only 3KB), which can parse interpolation template syntax and provide data monitoring.
@@ -7,20 +7,28 @@
 &nbsp;&nbsp;&nbsp;&nbsp;不支持IE11，浏览器需要原生支持Proxy  
 &nbsp;&nbsp;&nbsp;&nbsp;IE11 not supported,browser needs native Proxy support.
 # Installation
+## npm
 ```
-npm install Padding 
+npm install silicagel
+```
+## \<script\>
+```
+<!--直接引入dist文件下的silicagel.js，生产环境可以引入体积更小的silicagel.min.js-->
+<script src="./dist/silicagel.js"></script>
+<!--生产环境-->
+<script src="./dist/silicagel.min.js"></script>
 ```
 # Usage
 ### 插值模板解析
 ```js
-import Padding from "padding"
+import Silicagel from "silicagel"
 // or 
-// const Padding = require("padding")
+// const Silicagel = require("silicagel")
 
 const node = document.body
 
 let data = {
-  title: "🌸Padding",
+  title: "🌸Silicagel",
   content: {
     description: "Lightweight and high performance responsive Library",
     wordNumber: 51,
@@ -32,11 +40,11 @@ let data = {
 //The render method returns a Proxy instance(same as observe method)
 //经过代理后的data对象内的变化会立即反应在DOM中
 //Changes in the Proxy instance will immediately reflected in the DOM
-data = Padding.render(node, data)
+data = Silicagel.render(node, data)
 ```
 ### 数据监听
 ```js
-import Padding from "padding"
+import Silicagel from "silicagel"
 
 let data = {
   msg: {
@@ -46,7 +54,7 @@ let data = {
 }
 //observe函数返回经过Proxy代理后的函数，且提供watch方法监听数据变化
 //The observe method returns a Proxy instance, and provides the watch method to listen for data changes
-data = Padding.observe(data)
+data = Silicagel.observe(data)
 
 data.watch("msg.id", (newVal, oldVal) => {
   //do something
@@ -56,4 +64,4 @@ data.watch("msg.id", (newVal, oldVal) => {
 
 ### History:  
 _Date: 2020/04/22_  
-&nbsp;&nbsp;&nbsp;&nbsp;release Padding v1.0.0
+&nbsp;&nbsp;&nbsp;&nbsp;release Silicagel v1.0.0

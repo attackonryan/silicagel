@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global = global || self, global.Padding = factory());
+  (global = global || self, global.Silicagel = factory());
 }(this, (function () { 'use strict';
 
   let uid = 0;
@@ -191,13 +191,15 @@
     return proxy
   }
 
-  function Padding(){
+  function Silicagel(){
 
   }
-  Padding.render = compile;
-  Padding.observe = observe;
-  Padding.Watcher = Watcher;
+  Silicagel.render = compile;
+  Silicagel.observe = observe;
+  Silicagel.Watcher = Watcher;
 
-  return Padding;
+  // module.exports = Silicagel
+
+  return Silicagel;
 
 })));
