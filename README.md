@@ -1,12 +1,11 @@
 # Padding
-### 简介: 
+### Introduction: 
 &nbsp;&nbsp;&nbsp;&nbsp;轻便，高性能的响应式库(压缩版仅3kb)，可解析插值模板和数据侦听  
 &nbsp;&nbsp;&nbsp;&nbsp;Lightweight, high-performance responsive Library (compressed version only 3KB), which can parse interpolation template syntax and provide data monitoring.
-### 版本: 1.0.0  
-### 兼容性
+### Version: 1.0.0  
+### Compatibility
 &nbsp;&nbsp;&nbsp;&nbsp;不支持IE11，浏览器需要原生支持Proxy  
 &nbsp;&nbsp;&nbsp;&nbsp;IE11 not supported,browser needs native Proxy support.
-___
 # Installation
 ```
 npm install Padding 
@@ -55,6 +54,6 @@ data.watch("msg.id", (newVal, oldVal) => {
 ```
 
 
-### 更新记录:  
+### History:  
 _Date: 2020/04/22_  
 &nbsp;&nbsp;&nbsp;&nbsp;release Padding v1.0.0
