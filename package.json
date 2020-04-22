@@ -1,26 +1,36 @@
 {
-  "name": "ryan.js",
-  "version": "0.1.0",
-  "description": "Super performance with tiny file size MVVM framework ryan.js",
-  "main": "dist/ryan.cjs.js",
-  "module": "dist/ryan.esm.js",
+  "name": "padding",
+  "version": "1.0.0",
+  "description": "Lightweight and high performance responsive Library",
+  "main": "dist/padding.cjs.js",
+  "module": "dist/padding.esm.js",
   "scripts": {
     "dev": "cross-env FORMAT=umd rollup -c -w",
     "dev:esm": "cross-env FORMAT=esm rollup -c -w",
-    "dev:cjs": "cross-env FORMAT=cjs rollup -c -w"
+    "dev:cjs": "cross-env FORMAT=cjs rollup -c -w",
+    "build": "cross-env NODE_ENV=production FORMAT=umd rollup -c",
+    "build:esm": "cross-env NODE_ENV=production FORMAT=esm rollup -c",
+    "build:cjs": "cross-env NODE_ENV=production FORMAT=cjs rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/attackonryan/ryan.js.git"
+    "url": "https://github.com/attackonryan/padding.git"
   },
   "keywords": [
-    "ryan",
-    "ryan.js",
-    "MVVM"
+    "padding",
+    "paddingjs",
+    "responsive",
+    "lightweight",
+    "Proxy",
+    "Interpolation syntax",
+    "data monitoring"
   ],
   "author": "Siyuan Liu",
   "license": "ISC",
   "devDependencies": {
-    "cross-env": "^7.0.2"
+    "cross-env": "^7.0.2",
+    "rollup": "^2.7.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.3.0"
   }
 }

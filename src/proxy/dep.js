@@ -1,6 +1,6 @@
 let uid = 0
 
-export default class Dep {
+class Dep {
   constructor() {
     this.id = uid++
     this.subs = []
@@ -14,4 +14,8 @@ export default class Dep {
   notify() {
     this.subs.forEach(sub => sub.update())
   }
+}
+
+export {
+  Dep
 }
