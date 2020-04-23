@@ -25,7 +25,9 @@
   function isObject(val) {
     return typeof val === 'object'
   }
-
+  function isPlainObject(val) {
+    return Object.prototype.toString.call(val) === "[object Object]"
+  }
   function hasOwn(val, key) {
     const hasOwnProperty = Object.prototype.hasOwnProperty;
     return hasOwnProperty.call(val, key)
@@ -148,10 +150,6 @@
   }
 
   function compile(el, proxy) {
-    if (!el || el.nodeType !== 1) {
-      console.warn("You should provide an element node for render method.");
-      return
-    }
     if(!proxy._isObserved){
       proxy = observe(proxy);
     }
@@ -192,9 +190,19 @@
   }
 
   function Silicagel(){
-
+    //feature in future
   }
-  Silicagel.render = compile;
+  Silicagel.render = function(el, proxy){
+    if (!el || el.nodeType !== 1) {
+      console.warn("You should provide an element node for argument[0]. (Silicagel.render)");
+      return
+    }
+    if(!isPlainObject(proxy)){
+      console.warn("You should provide an plain object for argument[1]. (Silicagel.render)");
+      return
+    }
+    return compile(el, proxy)
+  };
   Silicagel.observe = observe;
   Silicagel.Watcher = Watcher;
 
