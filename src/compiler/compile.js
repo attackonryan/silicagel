@@ -4,10 +4,6 @@ import {
 } from "../proxy/index"
 
 function compile(el, proxy) {
-  if (!el || el.nodeType !== 1) {
-    console.warn("You should provide an element node for render method.")
-    return
-  }
   if(!proxy._isObserved){
     proxy = observe(proxy)
   }
