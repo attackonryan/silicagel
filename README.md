@@ -1,9 +1,9 @@
 # Silicagel
-### Introduction: 
-&nbsp;&nbsp;&nbsp;&nbsp;轻便，高性能的响应式库(压缩版仅3kb)，可解析插值模板和数据侦听  
+### Introduction:  
+&nbsp;&nbsp;&nbsp;&nbsp;轻便，高性能的响应式库(压缩版仅3kb)，可进行双向绑定，数据侦听和插值模板解析   
 &nbsp;&nbsp;&nbsp;&nbsp;Lightweight, high-performance responsive Library (compressed version only 3KB),  
-&nbsp;&nbsp;&nbsp;&nbsp;which can parse interpolation template syntax and provide data monitoring.
-### Version: 1.0.2  
+&nbsp;&nbsp;&nbsp;&nbsp;which provide two-way data binding, data monitoring and can parse interpolation template syntax.
+### Version: 1.1.0  
 ### Compatibility
 &nbsp;&nbsp;&nbsp;&nbsp;不支持IE11，浏览器需要原生支持Proxy  
 &nbsp;&nbsp;&nbsp;&nbsp;IE11 not supported,browser needs native Proxy support.
@@ -21,6 +21,21 @@ npm install silicagel
 ```
 # Usage
 ### 插值模板解析
+```html
+<!--HTML example-->
+<body>
+  <h1>{{title}}</h1>
+  <p>description: {{content.description}}</p>
+  <p>wordNumber: {{content.wordNumber}}</p>
+  <p>your comment: {{comment}}</p>
+  <!--the 'bind' attribute will enable two-way data binding-->
+  <!--
+    If the input box changes, the data will be changed automatically. 
+    The data changes will also be displayed in the current view automatically
+  -->
+  <input type="text" bind="comment">
+</body>
+```
 ```js
 import Silicagel from "silicagel"
 // or 
@@ -32,8 +47,9 @@ let data = {
   title: "🌸Silicagel",
   content: {
     description: "Lightweight and high performance responsive Library",
-    wordNumber: 51,
-  }
+    wordNumber: 500,
+  },
+  comment: "nice"
 }
 //render函数会将传入的元素节点内所有插值模板(譬如{{content.wordNumber}})转换成data中的数据
 //The render method converts all the interpolation templates (such as {{content. Wordnumber}})
@@ -78,6 +94,9 @@ data.watch(combine, (newVal, oldVal) => {
 
 
 ### History:  
+_Date: 2020/04/24_   
+&nbsp;&nbsp;&nbsp;&nbsp;Silicagel v1.1.0  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new feature: two-way data binding  
 _Date: 2020/04/23_  
 &nbsp;&nbsp;&nbsp;&nbsp;Silicagel v1.0.2  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Improved API error handling  
