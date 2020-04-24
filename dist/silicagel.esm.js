@@ -190,14 +190,12 @@ function compile(el, proxy) {
               node.value = newVal;
             });
             node.addEventListener("input", e => {
-              console.time("test");
               exp.split(".").reduce((val, key, i, arr) => {
                 if (i === arr.length - 1) {
                   val[key] = e.target.value;
                 }
                 return val[key]
               }, proxy);
-              console.timeEnd("test");
             });
           }
         });
