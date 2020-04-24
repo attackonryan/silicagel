@@ -1,6 +1,6 @@
 {
   "name": "silicagel",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Lightweight and high performance responsive Library",
   "main": "dist/silicagel.cjs.js",
   "module": "dist/silicagel.esm.js",
@@ -23,7 +23,8 @@
     "lightweight",
     "Proxy",
     "Interpolation syntax",
-    "data monitoring"
+    "data monitoring",
+    "two-way data binding"
   ],
   "author": "Ryan",
   "license": "MIT",
