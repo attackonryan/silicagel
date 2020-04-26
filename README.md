@@ -3,7 +3,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;轻便，高性能的响应式库(压缩版仅3kb)，可进行双向绑定，数据侦听和插值模板解析   
 &nbsp;&nbsp;&nbsp;&nbsp;Lightweight, high-performance responsive Library (compressed version only 3KB),  
 &nbsp;&nbsp;&nbsp;&nbsp;which provide two-way data binding, data monitoring and can parse interpolation template syntax.
-### Version: 1.1.1 
+### Version: 1.1.2 
 ### Compatibility
 &nbsp;&nbsp;&nbsp;&nbsp;不支持IE11，浏览器需要原生支持Proxy  
 &nbsp;&nbsp;&nbsp;&nbsp;IE11 not supported,browser needs native Proxy support.
@@ -94,9 +94,9 @@ data.watch(combine, (newVal, oldVal) => {
 
 
 ### History:  
-_Date: 2020/04/24_
-&nbsp;&nbsp;&nbsp;&nbsp;Silicagel v1.1.1
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console print code removed
+_Date: 2020/04/24_  
+&nbsp;&nbsp;&nbsp;&nbsp;Silicagel v1.1.2  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console print code removed  
 _Date: 2020/04/24_   
 &nbsp;&nbsp;&nbsp;&nbsp;Silicagel v1.1.0  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new feature: two-way data binding  
